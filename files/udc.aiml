@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>Ainda não entendo o que isso quer dizer.</template>
+  </category>
+ 
+  <category>
+    <pattern>OI</pattern>
+    <template>Olá, tudo bem? Deseja comprar calça ou camisa?</template>
+  </category>
+ 
+  <category>
+    <pattern>OLÁ</pattern>
+    <template>Olá, tudo bem? Deseja comprar calça ou camisa?</template>
+  </category>
+ 
+  <category>
+    <pattern>OI *</pattern>
+    <template>Olá, tudo bem? Deseja comprar calça ou camisa?</template>
+  </category>
+ 
+  <category>
+    <pattern>OLÁ *</pattern>
+    <template>Olá, tudo bem? Deseja comprar calça ou camisa?</template>
+  </category>
+ 
+ 
+ 
+  <category>
+      <that>DESEJA COMPRAR CALÇA OU CAMISA</that>
+      <pattern>* CALÇA</pattern>
+      <template>Escolha um tamanho: 34, 35 ou 36
+        <think>
+          <set name="roupa">calça</set>
+        </think>
+      </template>
+  </category>
+ 
+  <category>
+      <that>DESEJA COMPRAR CALÇA OU CAMISA</that>
+      <pattern>* CALCA</pattern>
+      <template>Escolha um tamanho: 34, 35 ou 36
+        <think>
+          <set name="roupa">calça</set>
+        </think>
+      </template>
+  </category>
+ 
+  <category>
+      <that>DESEJA COMPRAR CALÇA OU CAMISA</that>
+      <pattern>CALÇA</pattern>
+      <template>Escolha um tamanho: 34, 35 ou 36
+        <think>
+          <set name="roupa">calça</set>
+        </think>
+      </template>
+  </category>
+ 
+  <category>
+      <that>DESEJA COMPRAR CALÇA OU CAMISA</that>
+      <pattern>CALCA</pattern>
+      <template>Escolha um tamanho: 34, 35 ou 36
+        <think>
+          <set name="roupa">calça</set>
+        </think>
+      </template>
+  </category>
+ 
+ 
+  <category>
+      <that>ESCOLHA UM TAMANHO 34, 35 OU 36</that>
+      <pattern>34</pattern>
+      <template>
+          Temos três modelos disponíveis, escolha um: slim fit, regular fit, skinny fit
+          <think>
+            <set name="tam">34</set>
+          </think>
+      </template>
+  </category>
+ 
+  <category>
+      <that>ESCOLHA UM TAMANHO 34, 35 OU 36</that>
+      <pattern>* 34</pattern>
+      <template>
+          Temos três modelos disponíveis, escolha um: slim fit, regular fit, skinny fit
+          <think>
+            <set name="tam">34</set>
+          </think>
+      </template>
+  </category>
+ 
+  <category>
+      <that>ESCOLHA UM TAMANHO 34, 35 OU 36</that>
+      <pattern>35</pattern>
+      <template>
+          Temos três modelos disponíveis, escolha um: slim fit, regular fit, skinny fit
+          <think>
+            <set name="tam">35</set>
+          </think>
+      </template>
+  </category>
+ 
+  <category>
+      <that>ESCOLHA UM TAMANHO 34, 35 OU 36</that>
+      <pattern>* 35</pattern>
+      <template>
+          Temos três modelos disponíveis, escolha um: slim fit, regular fit, skinny fit
+          <think>
+            <set name="tam">35</set>
+          </think>
+      </template>
+  </category>
+ 
+   <category>
+      <that>ESCOLHA UM TAMANHO 34, 35 OU 36</that>
+      <pattern>36</pattern>
+      <template>
+          Temos três modelos disponíveis, escolha um: slim fit, regular fit, skinny fit
+          <think>
+            <set name="tam">36</set>
+          </think>
+      </template>
+  </category>
+ 
+  <category>
+      <that>ESCOLHA UM TAMANHO 34, 35 OU 36</that>
+      <pattern>* 36</pattern>
+      <template>
+          Temos três modelos disponíveis, escolha um: slim fit, regular fit, skinny fit
+          <think>
+            <set name="tam">36</set>
+          </think>
+      </template>
+  </category>
+ 
+ 
+  <category>
+      <that>TEMOS TRÊS MODELOS DISPONÍVEIS, ESCOLHA UM SLIM FIT, REGULAR FIT, SKINNY FIT</that>
+      <pattern>SLIM</pattern>
+      <template>
+          O pedido está sendo processado: <get name="roupa"/>, tamanho <get name="tam"/>, slim fit. Obrigado pela compra!
+      </template>
+  </category>
+ 
+  <category>
+      <that>TEMOS TRÊS MODELOS DISPONÍVEIS, ESCOLHA UM SLIM FIT, REGULAR FIT, SKINNY FIT</that>
+      <pattern>SLIM *</pattern>
+      <template>
+          O pedido está sendo processado: <get name="roupa"/>, tamanho <get name="tam"/>, slim fit. Obrigado pela compra!
+      </template>
+  </category>
+ 
+  <category>
+      <that>TEMOS TRÊS MODELOS DISPONÍVEIS, ESCOLHA UM SLIM FIT, REGULAR FIT, SKINNY FIT</that>
+      <pattern>REGULAR</pattern>
+      <template>
+          O pedido está sendo processado: <get name="roupa"/>, tamanho <get name="tam"/>, regular fit. Obrigado pela compra!
+      </template>
+  </category>
+ 
+  <category>
+      <that>TEMOS TRÊS MODELOS DISPONÍVEIS, ESCOLHA UM SLIM FIT, REGULAR FIT, SKINNY FIT</that>
+      <pattern>REGULAR *</pattern>
+      <template>
+          O pedido está sendo processado: <get name="roupa"/>, tamanho <get name="tam"/>, regular fit. Obrigado pela compra!
+      </template>
+  </category>
+ 
+  <category>
+      <that>TEMOS TRÊS MODELOS DISPONÍVEIS, ESCOLHA UM SLIM FIT, REGULAR FIT, SKINNY FIT</that>
+      <pattern>SKINNY</pattern>
+      <template>
+          O pedido está sendo processado: <get name="roupa"/>, tamanho <get name="tam"/>, skinny fit. Obrigado pela compra!
+      </template>
+  </category>
+ 
+  <category>
+      <that>TEMOS TRÊS MODELOS DISPONÍVEIS, ESCOLHA UM SLIM FIT, REGULAR FIT, SKINNY FIT</that>
+      <pattern>SKINNY *</pattern>
+      <template>
+          O pedido está sendo processado: <get name="roupa"/>, tamanho <get name="tam"/>, skinny fit. Obrigado pela compra!
+      </template>
+  </category>
+ 
+ 
+ 
+  <category>
+      <that>DESEJA COMPRAR CALÇA OU CAMISA</that>
+      <pattern>* CAMISA</pattern>
+      <template>
+          Escolha um tamanho: P, M, G
+          <think>
+            <set name="roupa">camisa</set>
+          </think>
+      </template>
+  </category>
+ 
+  <category>
+      <that>DESEJA COMPRAR CALÇA OU CAMISA</that>
+      <pattern>CAMISA</pattern>
+      <template>
+          Escolha um tamanho: P, M, G
+          <think>
+            <set name="roupa">camisa</set>
+          </think>
+      </template>
+  </category>
+ 
+ 
+  <category>
+      <that>ESCOLHA UM TAMANHO P, M, G</that>
+      <pattern>P</pattern>
+      <template>
+          Escolha o modelo da gola: V, redonda ou polo
+          <think>
+              <set name="tamanho">P</set>
+          </think>
+      </template>
+  </category>
+ 
+  <category>
+      <that>ESCOLHA UM TAMANHO P, M, G</that>
+      <pattern>* P</pattern>
+      <template>
+          Escolha o modelo da gola: V, redonda ou polo
+          <think>
+              <set name="tamanho">P</set>
+          </think>
+      </template>
+  </category>
+ 
+  <category>
+      <that>ESCOLHA UM TAMANHO P, M, G</that>
+      <pattern>M</pattern>
+      <template>
+          Escolha o modelo da gola: V, redonda ou polo
+          <think>
+              <set name="tamanho">M</set>
+          </think>
+      </template>
+  </category>
+ 
+  <category>
+      <that>ESCOLHA UM TAMANHO P, M, G</that>
+      <pattern>* M</pattern>
+      <template>
+          Escolha o modelo da gola: V, redonda ou polo
+          <think>
+              <set name="tamanho">M</set>
+          </think>
+      </template>
+  </category>
+ 
+  <category>
+      <that>ESCOLHA UM TAMANHO P, M, G</that>
+      <pattern>G</pattern>
+      <template>
+          Escolha o modelo da gola: V, redonda ou polo
+          <think>
+              <set name="tamanho">G</set>
+          </think>
+      </template>
+  </category>
+ 
+  <category>
+      <that>ESCOLHA UM TAMANHO P, M, G</that>
+      <pattern>* G</pattern>
+      <template>
+          Escolha o modelo da gola: V, redonda ou polo
+          <think>
+              <set name="tamanho">G</set>
+          </think>
+      </template>
+  </category>
+ 
+ 
+  <category>
+      <that>ESCOLHA O MODELO DA GOLA V, REDONDA OU POLO</that>
+      <pattern>V</pattern>
+      <template>
+          O pedido está sendo processado: <get name="roupa"/>, tamanho <get name="tamanho"/>, gola V. Obrigado pela compra!
+      </template>
+  </category>
+ 
+  <category>
+      <that>ESCOLHA O MODELO DA GOLA V, REDONDA OU POLO</that>
+      <pattern>* V</pattern>
+      <template>
+          O pedido está sendo processado: <get name="roupa"/>, tamanho <get name="tamanho"/>, gola V. Obrigado pela compra!
+      </template>
+  </category>
+ 
+  <category>
+      <that>ESCOLHA O MODELO DA GOLA V, REDONDA OU POLO</that>
+      <pattern>REDONDA</pattern>
+      <template>
+          O pedido está sendo processado: <get name="roupa"/>, tamanho <get name="tamanho"/>, gola redonda. Obrigado pela compra!
+      </template>
+  </category>
+ 
+  <category>
+      <that>ESCOLHA O MODELO DA GOLA V, REDONDA OU POLO</that>
+      <pattern>* REDONDA</pattern>
+      <template>
+          O pedido está sendo processado: <get name="roupa"/>, tamanho <get name="tamanho"/>, gola redonda. Obrigado pela compra!
+      </template>
+  </category>
+ 
+  <category>
+      <that>ESCOLHA O MODELO DA GOLA V, REDONDA OU POLO</that>
+      <pattern>POLO</pattern>
+      <template>
+          O pedido está sendo processado: <get name="roupa"/>, tamanho <get name="tamanho"/>, gola polo. Obrigado pela compra!
+      </template>
+  </category>
+ 
+  <category>
+      <that>ESCOLHA O MODELO DA GOLA V, REDONDA OU POLO</that>
+      <pattern>* POLO</pattern>
+      <template>
+          O pedido está sendo processado: <get name="roupa"/>, tamanho <get name="tamanho"/>, gola polo. Obrigado pela compra!
+      </template>
+  </category>
+ 
+</aiml>
